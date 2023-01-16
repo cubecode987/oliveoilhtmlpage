@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Cart</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #F9F9F9;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .header {
+        background-color: #333333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+      }
+      .header a:hover {
+        text-decoration: underline;
+      }
+      .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cart-section {
+        background-color: white;
+        padding: 4rem;
+        text-align: center;
+      }
+      .cart-section h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .cart-section table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 2rem 0;
+      }
+      .cart-section table thead {
+        background-color: #333333;
+        color: white;
+      }
+      .cart-section table th, .cart-section table td {
+        padding: 1rem;
+        text-align: left;
+      }
+      .cart-section table tbody tr:nth-of-type(odd) {
+        background-color: #F9F9F9;
+      }
+      .cart-section table tbody tr:hover {
+        background-color: #F1F1F1;
+        cursor: pointer;
+      }
+      .cart-section table tfoot {
+        background-color: #333333;
+        color: white;
+      }
+      .cart-section form {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+      }
+      .cart-section form input[type="number"] {
+        width: 5rem;
+        padding: 0.5rem;
+        margin: 0 1rem;
+        border: 2px solid #333333;
+        font-size: 1.2rem;
+        transition: all 0.2s ease-in-out;
+      }
+      .cart-section form input[type="number"]:focus {
+        border-color: #333333;
+        outline: none;
+      }
+      .cart-section form input[type="submit"] {
+        background-color: #333333;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .cart-section form input[type="submit"]:hover {
+        background-color: white;
+        color: #333333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>The Holy Land</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+      <section class="cart-section">
+        <h2>Your Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Extra Virgin Olive Oil</td>
+              <td>
+                <form>
+                  <input type="number" value="1" min="1" max="100">
+                </form>
+              </td>
+              <td>$12.99</td>
+            </tr>
+            <tr>
+              <td>Organic Olive Oil</td>
+              <td>
+                <form>
+                  <input type="number" value="1" min="1" max="100">
+                </form>
+              </td>
+              <td>$15.99</td>
+            </tr>
+            <tr>
+              <td>Infused Olive Oil</td>
+              <td>
+                <form>
+                  <input type="number" value="1" min="1" max="100">
+                </form>
+              </td>
+              <td>$18.99</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total</td>
+              <td>$47.97</td>
+            </tr>
+          </tfoot>
+        </table>
+        <form>
+          <input type="submit" value="Checkout">
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

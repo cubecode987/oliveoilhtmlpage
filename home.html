@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Holy Lands</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #F9F9F9;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .header {
+        background-color: #333333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+      }
+      .header a:hover {
+        text-decoration: underline;
+      }
+      .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .featured-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #333333;
+        color: white;
+        padding: 4rem;
+      }
+      .featured-section img{
+        border-radius: 20%;
+        margin-right: 60px;
+      }
+      .featured-section h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .featured-section p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+      }
+      .featured-section a {
+        margin-bottom: 40px;
+        margin-left: 15px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid white;
+        transition: all 0.2s ease-in-out;
+      }
+      .featured-section a:hover {
+        background-color: white;
+        color:#333333;
+        cursor: pointer;
+      }
+      .product-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0;
+      }
+      .product-card {
+        flex-basis: calc(33.33% - 2rem);
+        margin: 1rem;
+        background-color: white;
+        padding: 2rem;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        text-align: center;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+      }
+      .product-card:hover {
+        transform: scale(1.05);
+      }
+      .product-card img {
+        max-width: 100%;
+        margin: 2rem 0;
+      }
+      .product-card h3 {
+        margin: 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .product-card p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #333333;
+        margin: 1rem 0;
+      }
+      .product-card a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333333;
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #333333;
+        transition: all 0.2s ease-in-out;
+      }
+      .product-card a:hover {
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+      }
+      .about-section {
+        background-color: #F9F9F9;
+        padding: 4rem;
+        text-align: center;
+      }
+      .about-section h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .about-section p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+      }
+      .about-section a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333333;
+        margin-top: 1.2rem;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #333333;
+        transition: all 0.2s ease-in-out;
+      }
+      .about-section a:hover {
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+      }
+      .contact-section {
+        margin-top: 30px;
+        background-color: #333333;
+        color: white;
+        padding: 4rem;
+        text-align: center;
+      }
+      .contact-section h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .contact-section p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin: 2rem 0;
+      }
+      .contact-section a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid white;
+        transition: all 0.2s ease-in-out;
+      }
+      .contact-section a:hover {
+        background-color: white;
+        color: #333333;
+        cursor: pointer;
+      }
+      .container h1{
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>The Holy Land</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+      <section class="featured-section">
+        <!-- <h2>Extra Virgin Olive Oil</h2> -->
+        <img src="smallerversionofjeninoliveoilforwebsite.jpg">
+        <p>Our signature extra virgin olive oil is made from hand-picked olives and is cold-pressed to retain maximum flavor and health benefits.</p>
+        <a href="products.html">View Product</a>
+      </section>
+      <section class="product-section">
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Product 1">
+          <h3>Product 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id malesuada blandit, elit risus rutrum magna, id congue ipsum risus euismod nibh.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Product 2">
+          <h3>Product 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id malesuada blandit, elit risus rutrum magna, id congue ipsum risus euismod nibh.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Product 3">
+          <h3>Product 3</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id malesuada blandit, elit risus rutrum magna, id congue ipsum risus euismod nibh.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </section>
+      <section class="about-section">
+        <h2>About Our Company</h2>
+        <p>We are a family-owned business that has been producing high-quality olive oil for generations. Visit our about us page to learn more about our history and process.</p>
+        <a href="#">Learn More</a>
+      </section>
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have a question or comment? Contact us by phone, email, or by filling out the form on our contact us page.</p>
+        <a href="#">Contact Us</a>
+      </section>
+    </div>
+  </body>
+</html>

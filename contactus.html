@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #F9F9F9;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .header {
+        background-color: #333333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+      }
+      .header a:hover {
+        text-decoration: underline;
+      }
+      .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-section {
+        background-color: white;
+        padding: 4rem;
+        text-align: center;
+      }
+      .contact-section h2 {
+        margin: 0;
+        font-size: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .contact-section form {
+        margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .contact-section form label {
+        flex-basis: 100%;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: left;
+      }
+      .contact-section form input[type="text"], .contact-section form input[type="email"], .contact-section form textarea {
+        flex-basis: 100%;
+        padding: 0.5rem 1rem;
+        margin-bottom: 2rem;
+        border: 2px solid #333333;
+        font-size: 1.2rem;
+        transition: all 0.2s ease-in-out;
+      }
+      .contact-section form input[type="text"]:focus, .contact-section form input[type="email"]:focus, .contact-section form textarea:focus {
+        border-color: #333333;
+        outline: none;
+      }
+      .contact-section form input[type="submit"] {
+        background-color: #333333;
+        color: white;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        padding: 0.5rem 1.5rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .contact-section form input[type="submit"]:hover {
+        background-color: white;
+        color: #333333;
+      }
+      .container h1{
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>The Holy Land</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+      <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

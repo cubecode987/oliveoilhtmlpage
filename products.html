@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #F9F9F9;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .header {
+        background-color: #333333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        margin-right: 1rem;
+      }
+      .header a:hover {
+        text-decoration: underline;
+      }
+      .header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0;
+      }
+      .product-card {
+        flex-basis: calc(33.33% - 2rem);
+        margin: 1rem;
+        background-color: white;
+        padding: 2rem;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+        text-align: center;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+      }
+      .product-card:hover{
+        transform: scale(1.05);
+      }
+      .product-card img {
+        max-width: 100%;
+        margin: 2rem 0;
+      }
+      .product-card h3 {
+        margin: 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 1px 1px 0px #333333;
+      }
+      .product-card p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #333333;
+        margin: 1rem 0;
+      }
+      .product-card .price {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333333;
+        margin-top: 2rem;
+      }
+      .product-card .add-to-cart {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333333;
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 0.5rem 1.5rem;
+        border: 2px solid #333333;
+        transition: all 0.2s ease-in-out;
+      }
+      .product-card .add-to-cart:hover {
+        background-color: #333333;
+        color: white;
+        cursor: pointer;
+      }
+      .container h1{
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>The Holy Land</h1>
+        <nav>
+          <a href="home.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="cart.html">Cart</a>
+        </nav>
+      </header>
+      <section class="product-section">
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Extra Virgin Olive Oil">
+          <h3>Extra Virgin Olive Oil</h3>
+          <p>Our signature extra virgin olive oil is made from hand-picked olives and cold-pressed to retain maximum flavor and health benefits.</p>
+          <span class="price">$15.00</span>
+          <a href="#" class="add-to-cart">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Organic Olive Oil">
+          <h3>Organic Olive Oil</h3>
+          <p>Our organic olive oil is made from olives that are grown without the use of pesticides or chemicals. It is the perfect choice for those who are conscious about the environment and their health.</p>
+          <span class="price">$20.00</span>
+          <a href="#" class="add-to-cart">Add to Cart</a>
+        </div>
+        <div class="product-card">
+          <img src="jeninoliveoilpictureforwebsite.jpg" alt="Infused Olive Oil">
+          <h3>Infused Olive Oil</h3>
+          <p>Our infused olive oils are made by infusing extra virgin olive oil with various herbs and spices for added flavor. Choose from our selection of garlic, basil, lemon, and chili infused oils.</p>
+          <span class="price">$18.00</span>
+          <a href="#" class="add-to-cart">Add to Cart</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
